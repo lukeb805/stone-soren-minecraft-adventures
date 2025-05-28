@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stone & Soren's Minecraft Adventures</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#f0f0f0; text-align:center; padding:20px; }
+    h1 { color:#333; }
+    #buttons button { margin:8px; padding:10px 18px; font-size:16px; cursor:pointer; border:none; border-radius:4px; background:#3b82f6; color:white; }
+    #content { margin-top:24px; background:#fff; padding:20px; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); max-width:640px; margin:auto; }
+    #content img { max-width:100%; height:auto; border-radius:4px; margin-bottom:16px; }
+    #story { font-size:14px; line-height:1.5; color:#444; white-space:pre-wrap; text-align:left; }
+  </style>
+</head>
+<body>
+  <h1>Stone & Soren's Minecraft Adventures</h1>
+  <div id="buttons">
+    <button onclick="showStory('soren-creeper')">1. Soren vs. The Creeper</button>
+    <button onclick="showStory('stone-redstone')">2. Stone’s Redstone Base</button>
+    <button onclick="showStory('elytra-flight')">3. Flying with Elytra</button>
+    <button onclick="showStory('magic-portal')">4. Stone Builds the Magic Portal</button>
+  </div>
+  <div id="content">
+    <img id="image" src="" alt="story image" />
+    <div id="story"></div>
+  </div>
+  <script>
+    const data = {
+      'soren-creeper': {
+        image: 'soren-creeper.png',
+        story: `Soren was walking through the plains biome.
