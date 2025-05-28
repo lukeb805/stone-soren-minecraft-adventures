@@ -30,3 +30,75 @@
       'soren-creeper': {
         image: 'soren-creeper.png',
         story: `Soren was walking through the plains biome.
+He had his shiny iron sword ready.
+Then—SSSSS... a Creeper popped out from behind a tree block!
+
+The Creeper made a scary sound.
+Soren jumped back.
+Then—BAM!—he hit it with his sword!
+
+POOF! The Creeper turned into smoke and gunpowder.
+“No blowing up my base today!” said Soren.
+He picked up the loot and kept exploring.`
+      },
+      'stone-redstone': {
+        image: 'stone-redstone.png',
+        story: `Stone wanted a big, awesome base.
+Not just made of wood — no way!
+He used stone bricks, spruce planks, and glass panes.
+
+First, he dug out a space on a hill.
+Then he built tall stone brick walls with polished andesite floors.
+He used lanterns instead of torches — so fancy!
+
+But the coolest part?
+He built a secret piston door using redstone!
+“Click!” went the lever, and the door opened by itself!
+
+Inside, Stone added a bedroom, a storage room, and even a crafting lab with anvils, enchanting tables, and item frames.
+
+Zombies, creepers, and skeletons stayed far away.
+“This base is boss,” Stone said.
+And he slept safely through the Minecraft night.`
+      },
+      'elytra-flight': {
+        image: 'elytra-flight.png',
+        story: `Stone and Soren climbed up a mountain biome.
+They both had shiny Elytra wings on their backs.
+“Let’s launch from this scaffolding tower!” said Stone.
+
+“One, two, three—WHEEEE!”
+They jumped and used firework rockets to zoom!
+They soared over a village, a taiga forest, and a giant ravine.
+
+Soren did a spin. Stone flew through clouds.
+“Best flight ever!” they yelled.
+They flew until the sun set over the blocky world.`
+      },
+      'magic-portal': {
+        image: 'magic-portal.png',
+        story: `Stone, Soren, and Dad found some obsidian blocks in a chest near a lava pool.
+“We can build a Nether portal!” said Stone.
+
+Soren looked curious. “How many blocks?”
+
+“Just ten if you skip the corners,” said Stone.
+He placed the blocks:
+2 on the bottom, 3 up each side, and 2 across the top.
+
+Soren helped place the last obsidian block.
+Then Stone pulled out flint and steel.
+
+FOOM! The portal lit up with purple swirls.
+“Time to visit the Nether biome!” said Dad.
+“Let’s hope we don’t run into a Ghast!” said Stone, grinning.`
+      }
+    };
+    function showStory(key) {
+      const { image, story } = data[key];
+      document.getElementById('image').src = image;
+      document.getElementById('story').textContent = story;
+    }
+  </script>
+</body>
+</html>
